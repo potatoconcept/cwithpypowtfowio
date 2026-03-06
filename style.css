@@ -101,3 +101,16 @@ margin-bottom:60px;
 border-radius:6px;
 box-shadow:0 20px 40px rgba(0,0,0,0.6);
 }
+
+.featured-art{
+width:100%;
+max-width:1400px;
+margin:40px auto 80px auto;
+padding:0 20px;
+}
+
+.featured-art img{
+width:100%;
+border-radius:8px;
+box-shadow:0 30px 60px rgba(0,0,0,0.6);
+}
