@@ -1,11 +1,9 @@
 body{
 margin:0;
-font-family:Arial, sans-serif;
-background:#0f0f0f;
+font-family:Arial, Helvetica, sans-serif;
+background:#111;
 color:white;
 }
-
-/* HERO */
 
 .hero{
 text-align:center;
@@ -19,20 +17,19 @@ margin-bottom:10px;
 
 .tagline{
 font-size:20px;
-opacity:0.8;
+opacity:0.9;
 }
 
 .subtitle{
-opacity:0.5;
+opacity:0.6;
+margin-top:5px;
 }
-
-/* PROJECT GRID */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
 gap:30px;
-padding:40px;
+padding:60px;
 max-width:1200px;
 margin:auto;
 }
@@ -40,34 +37,33 @@ margin:auto;
 .project-card{
 text-decoration:none;
 color:white;
-position:relative;
-overflow:hidden;
-border-radius:8px;
+transition:transform 0.3s;
 }
 
 .project-card img{
 width:100%;
-height:100%;
-object-fit:cover;
-transition:transform .4s ease;
+border-radius:6px;
 }
 
-.project-card:hover img{
-transform:scale(1.08);
+.project-card:hover{
+transform:scale(1.03);
 }
 
 .project-info{
-position:absolute;
-bottom:0;
-background:linear-gradient(transparent, rgba(0,0,0,0.9));
-width:100%;
-padding:20px;
+margin-top:10px;
 }
 
-/* ABOUT */
+.project-info h2{
+margin:0;
+font-size:20px;
+}
+
+.project-info p{
+opacity:0.6;
+}
 
 .about{
-max-width:800px;
+max-width:700px;
 margin:auto;
 padding:80px 20px;
 text-align:center;
@@ -79,69 +75,12 @@ margin-bottom:20px;
 }
 
 .about p{
-opacity:0.8;
 line-height:1.6;
+opacity:0.8;
 }
-
-/* FOOTER */
 
 footer{
 text-align:center;
 padding:40px;
 opacity:0.6;
-}
-
-/* PROJECT PAGE */
-
-.project-header{
-text-align:center;
-padding:60px 20px;
-}
-
-.back{
-color:white;
-text-decoration:none;
-border:1px solid white;
-padding:8px 16px;
-}
-
-/* GALLERY */
-
-.gallery{
-max-width:1000px;
-margin:auto;
-padding:40px;
-display:grid;
-gap:30px;
-}
-
-.gallery img{
-width:100%;
-cursor:pointer;
-border-radius:6px;
-transition:transform .3s;
-}
-
-.gallery img:hover{
-transform:scale(1.02);
-}
-
-/* LIGHTBOX */
-
-.lightbox{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.95);
-display:flex;
-justify-content:center;
-align-items:center;
-z-index:1000;
-}
-
-.lightbox img{
-max-width:90%;
-max-height:90%;
 }
